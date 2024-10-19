@@ -8,7 +8,7 @@ import (
 var Database *gorm.DB
 var err error
 
-var urlDatabase = "root:ilove1382005#@tcp(localhost:3306)/mysqldb"
+var urlDatabase = "root:ilove1382005#@tcp(localhost:3306)/mysqldb?parseTime=true"
 
 func DBconnect() {
 	var err error

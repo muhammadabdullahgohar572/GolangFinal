@@ -8,7 +8,12 @@ import (
 
 func Rout() {
 	r := mux.NewRouter()
-	r.HandleFunc("/employee", CreateEmployee).Methods("POST") // Corrected endpoint spelling
+	r.HandleFunc("/getdata", GetEmployeeData).Methods("GET")
+	r.HandleFunc("/employee", CreateEmployee).Methods("POST")
+	
+
+
+	// Corrected endpoint spelling
 	log.Fatal(http.ListenAndServe(":8080", r))
 	// Now the correct URL will be http://localhost:8080/employee
 }
