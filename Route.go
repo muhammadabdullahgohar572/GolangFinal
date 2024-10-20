@@ -10,6 +10,9 @@ func Rout() {
 	r := mux.NewRouter()
 	r.HandleFunc("/getdata", GetEmployeeData).Methods("GET")
 	r.HandleFunc("/employee", CreateEmployee).Methods("POST")
+	r.HandleFunc("/getdatas/{eid}", GetEmployeeDataID).Methods("GET")
+	r.HandleFunc("/getdatass/{eid}", UpdateEmployeeData).Methods("PUT")
+
 	
 
 
