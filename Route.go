@@ -18,5 +18,6 @@ func Rout() {
 
 	// Corrected endpoint spelling
 	log.Fatal(http.ListenAndServe(":8080", r))
+	
 	// Now the correct URL will be http://localhost:8080/employee
 }
