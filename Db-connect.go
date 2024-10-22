@@ -17,4 +17,6 @@ func DBconnect() {
 		panic("Failed to connect to Database please check Abdullah: " + err.Error())
 	}
 	Database.AutoMigrate(&Employee{}) // Migrate the Employee schema
+	Database.AutoMigrate(&CreateUserData{}) // Migrate the Employee schema
+    
 }
