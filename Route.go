@@ -15,6 +15,8 @@ func Rout() {
 	
 	r.HandleFunc("/userdata",singup).Methods("POST")
 	
+	r.HandleFunc("/login",login).Methods("POST")
+	r.HandleFunc("/decode", decodeToken).Methods("GET")
 
 
 	// Corrected endpoint spelling
